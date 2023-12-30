@@ -74,7 +74,7 @@ openssl req -x509 \
 
 # Validate
 
-# curl -u "elastic:Elastic123" --location https://VM-IP -kL
+```curl -u "elastic:Elastic123" --location https://192.168.1.230 -kL```
 
 
 
