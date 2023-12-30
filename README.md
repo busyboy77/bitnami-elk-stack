@@ -13,7 +13,7 @@ openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 36500 -out rootCA.cr
 
 ```
 
-# Run through loop to generate certs for all componenets -- also generate SSLs
+# Run through loop to generate certs for all components -- also generate SSLs
 
 ```
 for DNAME  in ingest data coordinating master 
