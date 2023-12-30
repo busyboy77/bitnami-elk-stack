@@ -3,7 +3,7 @@
 # Enhance the sysctl caps
 ```sudo echo "vm.max_map_count=262144" >> /etc/sysctl.d/elasticsearchSpecifications.conf && sudo sysctl --system```
 
-#set the global variable for AltDNSNames
+# set the global variable for AltDNSNames
 ````DNS:elasticsearch-${DNAME},DNS:localhost,DNS:*.elasticsearch-${DNAME},DNS:elasticsearch-${DNAME}-0,DNS:elasticsearch-${DNAME}-1,IP:127.0.0.1"````
 
 # Create a CA to be used for all certs
