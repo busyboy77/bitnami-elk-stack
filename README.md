@@ -14,7 +14,7 @@ sudo sysctl --system
 
 # set the global variable for AltDNSNames
 Only if you need to keep things simpler.Sample certificate includes servicename and other SANs for inclusion.
-````
+```
 DNSALTNAME="DNS:elasticsearch-${DNAME},DNS:localhost,DNS:*.elasticsearch-${DNAME},DNS:elasticsearch-${DNAME}-0,DNS:elasticsearch-${DNAME}-1,IP:127.0.0.1"
 ```
 
@@ -98,6 +98,22 @@ openssl req -x509 \
  -out ${NGINXDOMAIN}.crt \
  -subj "/CN=${NGINXDOMAIN}" \
  -addext "subjectAltName=DNS:www.${NGINXDOMAIN},DNS:*.${NGINXDOMAIN},DNS:someother.domain,IP:127.0.0.1"
+
+```
+
+
+
+# ignite the docker-compose.yml
+
+```
+cd ../
+docker compose up -d
+```
+
+wait for all the pods to warm up
+
+```
+docker ps -a
 
 ```
 
