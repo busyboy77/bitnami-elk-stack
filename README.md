@@ -112,7 +112,7 @@ openssl req -x509 \
  -addext "subjectAltName=DNS:www.${NGINXDOMAIN},DNS:*.${NGINXDOMAIN},DNS:someother.domain,IP:127.0.0.1"
 
 ```
-
+Please edit the nginx/nginx.conf to reflect the NGINXDOMAIN if you use a custom domain including the docker-compose for nginx service's mount points.
 
 
 # ignite the docker-compose.yml
