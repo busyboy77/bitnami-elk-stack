@@ -64,8 +64,12 @@ mkdir kibana
 cd certs/kibana/
 ```
 # generate CA for kibana only.
+
+```
 openssl genrsa  -out rootCA.key 4096
 openssl req -x509 -new -nodes -key rootCA.key -sha256 -days 36500 -out rootCA.crt
+
+```
 
 # generate CERTs for Kibana
 ```
