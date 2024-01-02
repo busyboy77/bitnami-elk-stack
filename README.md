@@ -119,6 +119,7 @@ Please edit the nginx/nginx.conf to reflect the NGINXDOMAIN if you use a custom 
 
 ```
 cd ../
+chmod -R 777 cert
 docker compose up -d
 ```
 
