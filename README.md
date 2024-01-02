@@ -60,7 +60,7 @@ done
 Kibana uses its own CA and certs. Also it need to include the coordinating node's CA + SSL + key which we have mounted in the docker-compose.yaml
 
 ```
-mkdir certs/kibana
+mkdir kibana
 cd certs/kibana/
 ```
 # generate CA for kibana only.
