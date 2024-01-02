@@ -89,6 +89,13 @@ openssl x509 -req -extfile <(printf "subjectAltName=DNS:elasticsearch-${DNAME},D
 
 # Nginx CERTS
 
+cd out of kibana and create nginx folder to hold the certs for the FQDM
+
+```
+cd ../
+mkdir nginx
+```
+
 To enable HTTPS in bitnami/nginx, creae SSL certs including all the SANs
 
 ```
