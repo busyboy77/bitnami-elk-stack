@@ -21,6 +21,7 @@ DNSALTNAME="DNS:elasticsearch-${DNAME},DNS:localhost,DNS:*.elasticsearch-${DNAME
 # create certs directory
 ```
 mkdir certs
+cd certs
 ```
 
 
